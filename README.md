@@ -1,6 +1,13 @@
 # grafana-plugin-skeleton
 A starting point for building your own Grafana plugin. This is a work in progress.
 
+# Ongoing
+I am currently compiling some info from the following resources to create this skeleton (work in progress):
+* [Grafana code styleguide](http://docs.grafana.org/plugins/developing/code-styleguide/)
+* [Clock panel blog post](https://grafana.com/blog/2016/04/08/timing-is-everything.-writing-the-clock-panel-plugin-for-grafana-3.0/)
+* More to come soon
+
+
 # Set up
 Before you get started, you will need to install Grafana. If you're using a Mac, the easiest way to install Grafana is via Homebrew.
 
