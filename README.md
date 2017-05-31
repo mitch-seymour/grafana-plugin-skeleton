@@ -27,4 +27,19 @@ If you're using Linux or Windows, then follow [these instructions][grafana-build
 
 [grafana-build-from-src]: http://docs.grafana.org/project/building_from_source/
 
+## Optional
+I like to use Graphite as my datasource. An easy way of running Graphite is to use [hopsoft's Docker image](https://github.com/hopsoft/docker-graphite-statsd).
+```bash
+# run a graphite container. this will be our data source
+$ docker run -d\
+ --name graphite\
+ --restart=always\
+ -p 80:80\
+ -p 2003-2004:2003-2004\
+ -p 2023-2024:2023-2024\
+ -p 8125:8125/udp\
+ -p 8126:8126\
+ hopsoft/graphite-statsd
+ ```
+
 
